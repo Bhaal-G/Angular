@@ -3,10 +3,11 @@ import { Login } from './login/login';
 import { SignInComponent } from './signinComponentPractise/signin';
 import { LoginPropertyBinding } from './login-property-binding/login-property-binding';
 import { Events } from './events/events';
+import { EventHandling } from './event-handling/event-handling';
 
 @Component({
   selector: 'app-root',
-  imports: [Login,SignInComponent,LoginPropertyBinding,Events],
+  imports: [Login,SignInComponent,LoginPropertyBinding,Events,EventHandling],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

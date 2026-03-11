@@ -1,0 +1,9 @@
+.hover-box {
+    width: 200px;
+    height: 100px;
+    background-color: lightblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
