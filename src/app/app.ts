@@ -6,10 +6,12 @@ import { Events } from './events/events';
 import { EventHandling } from './event-handling/event-handling';
 import { SetGetValue } from './set-get-value/set-get-value';
 import { IfElseApp } from './if-else-app/if-else-app';
+import { ForLoop } from './for-loop/for-loop';
+import { Signals } from './signals/signals';
 
 @Component({
   selector: 'app-root',
-  imports: [Login, SignInComponent, LoginPropertyBinding, Events, EventHandling, SetGetValue, IfElseApp],
+  imports: [Login, SignInComponent, LoginPropertyBinding, Events, EventHandling, SetGetValue, IfElseApp,ForLoop,Signals],
   templateUrl: './app.html',
   styleUrls: ['./app.css']
 })
