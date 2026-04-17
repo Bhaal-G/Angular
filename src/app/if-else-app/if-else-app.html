@@ -3,3 +3,29 @@
 } @else {
     <h1>Please log in to continue.</h1>
 }
+
+@if(showBox) {
+    <div class="box">
+        This is a box that can be toggled.
+    </div>
+}
+<button (click)="toggleBox()">Toggle Box</button>
+
+<input (input)="updateAge($event.target.value)" placeholder="Enter Your Age">
+
+@if(age>=18){
+    <h1>You Can Vote</h1>
+}@else{
+    <h2>you Can't Vote</h2>
+}
+
+<button (click)="section='home'">Home</button>
+<button (click)="section='about'">About</button>
+<button (click)="section='contact'">Contact</button>
+@if(section === 'home') {
+    <h1>Home Section</h1>
+} @else if(section === 'about') {
+    <h1>About Section</h1>
+} @else if(section === 'contact') {
+    <h1>Contact Section</h1>
+}

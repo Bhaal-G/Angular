@@ -8,4 +8,17 @@ import { Component } from '@angular/core';
 })
 export class IfElseApp {
   isLoggedIn: boolean = true;
+  showBox=true;
+
+  toggleBox(){
+    this.showBox=!this.showBox;
+  }
+
+  age=0;
+
+  updateAge(val:string){
+    this.age=Number(val);
+  }
+
+  section="home";
 }
