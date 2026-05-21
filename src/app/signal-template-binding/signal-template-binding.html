@@ -1,0 +1,11 @@
+<h1>{{ count() }}</h1>
+
+@if (isLoggedIn()){
+    <p>Welcome Nipurn</p>
+}@else{
+    <p>Welcome User</p>
+}
+
+<button (click)="isLoggedIn.set(!isLoggedIn())">
+  Toggle Login
+</button>
