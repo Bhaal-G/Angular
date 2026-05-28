@@ -24,5 +24,21 @@
       <h1>{{usd | currency}}</h1>
       <h1>{{usd | convertPipe:usdToInrRate | currency:'INR'}}</h1> -->
       <!-- <app-signal-template-binding></app-signal-template-binding> -->
+      <!-- <app-signal-input></app-signal-input> -->
 
-      <app-signal-input></app-signal-input>
+      <!-- <app-store-example></app-store-example> -->
+<!-- <app-angular-form></app-angular-form> -->
+<!-- <app-card
+[title]="'My Card Title'"
+[description]="'This is a simple card component.'">
+
+<p>This is Coming from Parent</p>
+<button>Click Me</button> -->
+<!-- </app-card> -->
+
+<app-button-card
+[label]="'Save'"
+(clicked)="onSave($event)">
+</app-button-card>
+
+<p>{{message}}</p>

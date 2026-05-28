@@ -1,0 +1,24 @@
+<!-- <h2>Template-Driven Form</h2>
+
+<input
+[(ngModel)]="name"
+(ngModelChange)="name.set($event)"
+placeholder="Enter your name">
+
+<br><br>
+
+<input
+[(ngModel)]="email"
+(ngModelChange)="email.set($event)"
+placeholder="Enter your email">      -->
+
+
+<form [formGroup]="form">
+    <input formControlName="name" placeholder="Enter your name">
+    <br><br>
+    <input formControlName="email" placeholder="Enter your email">
+    <br><br>
+    <button (click)="submitForm()">Submit</button>
+</form>
+
+<p>Signal Value: {{ userSignal() | json }}</p>

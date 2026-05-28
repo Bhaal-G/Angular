@@ -20,12 +20,15 @@ import { TwoWayBinding } from './two-way-binding/two-way-binding';
 import { SignalTemplateBinding } from './signal-template-binding/signal-template-binding';
 import { ChildComponent } from './signal-input/child-component/child-component';
 import { SignalInput } from './signal-input/signal-input';
-
+import { StoreExample } from './store-example/store-example';
+import { AngularForm } from './angular-form/angular-form';
+import { Card } from './card/card';
+import { ButtonCard } from './button-card/button-card';
 @Component({
   selector: 'app-root',
   imports: [Login, SignInComponent, LoginPropertyBinding, Events, EventHandling, SetGetValue, IfElseApp,ForLoop,Signals,SignalsInterface,ComputedSignals
      ,Effects,PipesBasic,PipeShortNamePipe, ConvertPipePipe,CommonModule,SignalDeepDive,TwoWayBinding,SignalTemplateBinding,
-     SignalInput,ChildComponent
+     SignalInput,ChildComponent,StoreExample,AngularForm,Card,ButtonCard
   ],
   templateUrl: './app.html',
   styleUrls: ['./app.css']
@@ -42,6 +45,15 @@ export class App {
   // usd=10;
   // usdToInrRate=93;
 
+  // saveData(){
+  //   console.log("Data saved successfully!");
+  // }
+
+  message="";
+  onSave(msg:string){
+    console.log("Data saved successfully!"+msg);
+    this.message=msg;
+  }
 
 
 }
