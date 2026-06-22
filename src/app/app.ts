@@ -24,11 +24,12 @@ import { StoreExample } from './store-example/store-example';
 import { AngularForm } from './angular-form/angular-form';
 import { Card } from './card/card';
 import { ButtonCard } from './button-card/button-card';
+import { FormField } from './form-field/form-field';
 @Component({
   selector: 'app-root',
   imports: [Login, SignInComponent, LoginPropertyBinding, Events, EventHandling, SetGetValue, IfElseApp,ForLoop,Signals,SignalsInterface,ComputedSignals
      ,Effects,PipesBasic,PipeShortNamePipe, ConvertPipePipe,CommonModule,SignalDeepDive,TwoWayBinding,SignalTemplateBinding,
-     SignalInput,ChildComponent,StoreExample,AngularForm,Card,ButtonCard
+     SignalInput,ChildComponent,StoreExample,AngularForm,Card,ButtonCard,FormField
   ],
   templateUrl: './app.html',
   styleUrls: ['./app.css']
@@ -48,6 +49,13 @@ export class App {
   // saveData(){
   //   console.log("Data saved successfully!");
   // }
+
+  email="";
+  onEmailChange(value:string){
+    console.log("Email changed:",value);
+    this.email=value;
+  }
+
 
   message="";
   onSave(msg:string){

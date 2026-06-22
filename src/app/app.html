@@ -42,3 +42,9 @@
 </app-button-card>
 
 <p>{{message}}</p>
+
+<app-form-field
+[label]="'Email'"
+[type]="'email'"
+(valueChange)="onEmailChange($event)">    
+</app-form-field>
