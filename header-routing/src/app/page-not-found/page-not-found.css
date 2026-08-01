@@ -1,0 +1,120 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.not-found {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background:
+    radial-gradient(circle at top left, #7f5af0, transparent 40%),
+    radial-gradient(circle at bottom right, #2cb67d, transparent 40%),
+    linear-gradient(135deg, #0f172a, #1e293b);
+
+  font-family: "Poppins", sans-serif;
+}
+
+.card {
+  width: 500px;
+  padding: 50px;
+
+  text-align: center;
+
+  background: rgba(255,255,255,0.08);
+
+  backdrop-filter: blur(20px);
+
+  border: 1px solid rgba(255,255,255,0.15);
+
+  border-radius: 28px;
+
+  box-shadow:
+    0 25px 50px rgba(0,0,0,0.4);
+
+  animation: float 4s ease-in-out infinite;
+}
+
+.card h1 {
+  font-size: 110px;
+
+  background: linear-gradient(
+      45deg,
+      #8b5cf6,
+      #22d3ee
+  );
+
+  -webkit-background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+
+  margin-bottom: 10px;
+}
+
+.card h2 {
+  color: white;
+
+  font-size: 32px;
+
+  margin-bottom: 18px;
+}
+
+.card p {
+  color: #cbd5e1;
+
+  font-size: 17px;
+
+  line-height: 1.8;
+
+  margin-bottom: 35px;
+}
+
+.home-btn {
+  display: inline-block;
+
+  padding: 14px 34px;
+
+  border-radius: 50px;
+
+  text-decoration: none;
+
+  color: white;
+
+  background: linear-gradient(
+      135deg,
+      #8b5cf6,
+      #06b6d4
+  );
+
+  transition: all .3s ease;
+
+  font-weight: 600;
+}
+
+.home-btn:hover {
+  transform:
+      translateY(-4px)
+      scale(1.05);
+
+  box-shadow:
+      0 12px 30px
+      rgba(139,92,246,.5);
+}
+
+@keyframes float {
+  0% {
+      transform: translateY(0);
+  }
+
+  50% {
+      transform: translateY(-10px);
+  }
+
+  100% {
+      transform: translateY(0);
+  }
+}
