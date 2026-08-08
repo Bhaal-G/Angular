@@ -5,6 +5,7 @@ import { Dashboard } from './dashboard/dashboard';
 import { canDeactivateGuard } from './can-deactivate-guard';
 import { Profile } from './profile/profile';
 import { ProductComp } from './product-comp/product-comp';
+import { ProductsComponent } from './products-component/products-component';
 
 export const routes: Routes = [
 
@@ -19,11 +20,15 @@ export const routes: Routes = [
         canDeactivate:[canDeactivateGuard]
     },
     {
-        path:'product/:id',component: ProductComp
-    }    
-    ,
-    {path:'',redirectTo:'login',pathMatch:'full'}
-
+        path:'product', component: ProductsComponent
+    },
+    {
+        path:'product/:id', component: ProductComp
+    },
+    {path:'', redirectTo:'login', pathMatch:'full'},
+    {
+        path:'products', component: ProductsComponent
+    }
 
 
 ];
